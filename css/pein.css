@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+ margin: 0px;
+ padding: 0%;  
+ font-family: 'Open Sans', sans-serif; 
+ background: #fff;
+}
+nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  
+    position: sticky;
+    top: 0;
+}
+
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav> ul > li{
+    float: left;
+    position: relative;
+}
+nav > ul >li > a {
+    padding: 20px 30px;
+    color: rgb(0, 0, 0);
+    text-shadow:  2px 2px 4px rgba(0,0,0, .2);
+}
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+nav li{
+    list-style-type: none;
+    width: 180px;
+
+}
+.submenu{
+    display: none;
+}
+nav{
+    width: 100%;
+    text-align: center;
+
+  
+ 
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+nav li:hover .submenu{
+    display: inline-block;
+    position : absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.submenu li{
+    boder-bottom: 1px solid #CCC;
+}
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 100px;
+}
+.menu-Acceuil:hover{
+    border-top : 3px solid rgb(0, 0, 0);
+    background-color:RGBa(220,220,220,0.15);
+
+   
+}
+.menu-Renovation:hover{
+    border-top : 3px solid rgb(0, 0, 0);
+    background-color:RGBa(220,220,220,0.15);
+}
+.menu-Depannage:hover{
+    border-top : 3px solid rgb(0, 0, 0);
+    background-color:RGBa(220,220,220,0.15);
+}
+.menu-Decoration:hover{
+    border-top : 3px solid rgb(0, 0, 0);
+    background-color:RGBa(220,220,220,0.15);
+}
+.menu-Home:hover{
+    border-top : 3px solid rgb(0, 0, 0);
+    background-color:RGBa(220,220,220,0.15);
+}
+.menu-Projet:hover{
+    border-top : 3px solid rgb(0, 0, 0);
+    background-color:RGBa(220,220,220,0.15);
+}
+.menu-Contact:hover{
+    border-top : 3px solid rgb(0, 0, 0);
+    background-color:RGBa(220,220,220,0.15);
+}
+.submenu{
+    background-color:RGBa(220,220,220,2);
+    opacity: 0.8;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+.submenu li:hover a {
+    color : rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding:30px;
+    background: rgba(88, 88, 88, 0.8);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.13);
+}
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding: 240px;
+  }
+  .container{
+      position: relative;
+      width: 600px;
+      padding: 30px;
+      height: 690px;
+      background:#fff;
+      box-sizing: border-box;
+      border-radius: 18px;
+      box-shadow: 0 15px 50px rgba(0,0,0,.2);
+  }
+
+.circle{
+
+    width: 300px;
+    height: 200px;
+    background-size: 100% 100%;
+    float: left;
+  
+    
+}
+.deco{
+    width: 200px;
+    height: 200px;
+    background-size: 100% 100%;
+    float: left;
+  
+      
+}
+
+.images{
+    display: flex;
+    animation: mesImages 7s infinite;
+    animation-name: mesImages;
+    
+}
+#visons{
+    width: 500px;
+    overflow: hidden;
+    width: 500px;
+    height: auto;
+    background-size: 100% 100%;
+    float: left;
+    border: 2px solid #333;
+}
+@keyframes mesImages {
+    0%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-500px);
+    }
+    66%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+p{
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.bloc video{
+    position: absolute;
+    min-width: 500%;
+    min-height: 300%;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+.logo{
+    width: 600px;
+height: 300px;
+transition-duration: 1.5s;
+}
+.logo:hover{
+
+    transform: scale(1.3);
+}
+.fond{
+
+  width: 100%;
+  height: 100%;
+  margin-bottom: -2%;
+}
+.peinture{
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+    border : 2px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
+    
+}
+.logo:hover{
+
+    transform: scale(1.2);
+}
+.peintureG{
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+    border : 2px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.61);
+}
+.peintureV{
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+    border : 2px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px rgba(65, 64, 64, 0.89);
+}
